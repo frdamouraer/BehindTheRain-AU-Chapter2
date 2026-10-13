@@ -3,11 +3,11 @@
 /* Keep the Chapter 1 signature intro intact; only the chapter number changes. */
 .intro{background:#030507}
 .signature-kicker{color:#9fb7ca}
-.signature-kicker i{background:#a9cde8}
+.signature-kicker i{background:#ffc18c}
 .word-behind{color:#f0f3f8}
-.word-rain{background:linear-gradient(105deg,#f4fbff 0%,#8bd5ff 19%,#d5f0ff 34%,#5aa9df 48%,#f5fcff 59%,#9bd9ff 76%,#eaf7ff 90%,#6db7e9 100%);background-size:300% auto;background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 13px #78caff2e)}
-.word-rain:after{background:linear-gradient(108deg,transparent 0%,transparent 31%,#a8ddff00 38%,#a8ddff 44%,#f8fdff 49%,#fff 52%,#9edcff 57%,#7fcaff00 65%,transparent 72%);filter:drop-shadow(0 0 9px #a6e2ff) drop-shadow(0 0 20px #69bdff) drop-shadow(0 0 34px #4daaff85)}
-.signature h1:after{background:radial-gradient(ellipse at center,#8fd5ff42,transparent 68%)}
+.word-rain{background:linear-gradient(105deg,#f4fbff 0%,#f5a46a 19%,#fff2df 34%,#e8793d 48%,#fff8f0 59%,#ffc18c 76%,#fff8f0 90%,#6db7e9 100%);background-size:300% auto;background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 13px #f5a46a2e)}
+.word-rain:after{background:linear-gradient(108deg,transparent 0%,transparent 31%,#ffc18c00 38%,#ffc18c 44%,#f8fdff 49%,#fff 52%,#f7a46a 57%,#f5a46a00 65%,transparent 72%);filter:drop-shadow(0 0 9px #a6e2ff) drop-shadow(0 0 20px #69bdff) drop-shadow(0 0 34px #4daaff85)}
+.signature h1:after{background:radial-gradient(ellipse at center,#f5a46a42,transparent 68%)}
 .chapter-mark{color:#f0f4fa}
 .signature-tagline{color:#a9b9c9}
 
@@ -73,3 +73,6 @@ body{background:#08090b;color:#fbf4ed}
 
 /* Hide the tree foot behind a fully opaque foreground ground. */
 .sunset-ground{z-index:3;opacity:1;background:linear-gradient(180deg,#44313b 0%,#30232e 40%,#201921 100%)}.big-tree{z-index:2;bottom:0;transform-origin:bottom right}.leaf-layer{z-index:4}
+
+/* Chapter 2 sunset palette audit */
+:root{--sun:#f5d5a1;--rose:#c77d86;--plum:#39283d}.sunset-ground{opacity:1;z-index:3;background:linear-gradient(180deg,#44313b 0%,#30232e 40%,#201921 100%)}.big-tree{z-index:2;bottom:0;transform-origin:bottom right}.leaf-layer{z-index:4}
