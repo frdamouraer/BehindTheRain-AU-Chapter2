@@ -76,3 +76,9 @@ body{background:#08090b;color:#fbf4ed}
 
 /* Chapter 2 sunset palette audit */
 :root{--sun:#f5d5a1;--rose:#c77d86;--plum:#39283d}.sunset-ground{opacity:1;z-index:3;background:linear-gradient(180deg,#44313b 0%,#30232e 40%,#201921 100%)}.big-tree{z-index:2;bottom:0;transform-origin:bottom right}.leaf-layer{z-index:4}
+
+
+/* C2 transition reset: one incoming animation only; avoid stacked scene/screen reveals. */
+.story.transition-out-next .scene-head,.story.transition-out-next #narrativeCard,.story.transition-out-next #socialSection,.story.transition-out-next .scene-bottom,.story.transition-out-prev .scene-head,.story.transition-out-prev #narrativeCard,.story.transition-out-prev #socialSection,.story.transition-out-prev .scene-bottom{animation:none!important}
+.story.transition-in-next .scene-head,.story.transition-in-next #narrativeCard,.story.transition-in-next #socialSection,.story.transition-in-next .scene-bottom{animation:sceneEnterRight .48s cubic-bezier(.2,.75,.25,1) both!important}
+.story.transition-in-prev .scene-head,.story.transition-in-prev #narrativeCard,.story.transition-in-prev #socialSection,.story.transition-in-prev .scene-bottom{animation:sceneEnterLeft .48s cubic-bezier(.2,.75,.25,1) both!important}
