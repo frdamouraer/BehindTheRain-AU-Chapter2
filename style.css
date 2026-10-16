@@ -92,3 +92,16 @@ body{background:#08090b;color:#fbf4ed}
 .story.transition-in-prev .scene-head,.story.transition-in-prev #narrativeCard,.story.transition-in-prev #socialSection,.story.transition-in-prev .scene-bottom{animation:none!important}
 .story.transition-in-next{animation:sceneEnterRight .48s cubic-bezier(.2,.75,.25,1) both!important}
 .story.transition-in-prev{animation:sceneEnterLeft .48s cubic-bezier(.2,.75,.25,1) both!important}
+
+
+/* Fix the post-transition blink: cards and their inner text must not run a second reveal animation. */
+#story .narrative-card,
+#story .narrative p,
+#story .social-section,
+#story .dm-window,
+#story .bubble,
+#story .system-message,
+#story .tweet-card,
+#story .tweet-comments,
+#story .tweet-comment,
+#story .thread-reply{animation:none!important;}
