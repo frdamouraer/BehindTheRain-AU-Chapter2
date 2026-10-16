@@ -82,3 +82,13 @@ body{background:#08090b;color:#fbf4ed}
 .story.transition-out-next .scene-head,.story.transition-out-next #narrativeCard,.story.transition-out-next #socialSection,.story.transition-out-next .scene-bottom,.story.transition-out-prev .scene-head,.story.transition-out-prev #narrativeCard,.story.transition-out-prev #socialSection,.story.transition-out-prev .scene-bottom{animation:none!important}
 .story.transition-in-next .scene-head,.story.transition-in-next #narrativeCard,.story.transition-in-next #socialSection,.story.transition-in-next .scene-bottom{animation:sceneEnterRight .48s cubic-bezier(.2,.75,.25,1) both!important}
 .story.transition-in-prev .scene-head,.story.transition-in-prev #narrativeCard,.story.transition-in-prev #socialSection,.story.transition-in-prev .scene-bottom{animation:sceneEnterLeft .48s cubic-bezier(.2,.75,.25,1) both!important}
+
+
+/* FINAL C2 TRANSITION RESET: animate the story screen once, never its child blocks. */
+.story{animation:none!important}
+.story.transition-out-next .scene-head,.story.transition-out-next #narrativeCard,.story.transition-out-next #socialSection,.story.transition-out-next .scene-bottom,
+.story.transition-out-prev .scene-head,.story.transition-out-prev #narrativeCard,.story.transition-out-prev #socialSection,.story.transition-out-prev .scene-bottom,
+.story.transition-in-next .scene-head,.story.transition-in-next #narrativeCard,.story.transition-in-next #socialSection,.story.transition-in-next .scene-bottom,
+.story.transition-in-prev .scene-head,.story.transition-in-prev #narrativeCard,.story.transition-in-prev #socialSection,.story.transition-in-prev .scene-bottom{animation:none!important}
+.story.transition-in-next{animation:sceneEnterRight .48s cubic-bezier(.2,.75,.25,1) both!important}
+.story.transition-in-prev{animation:sceneEnterLeft .48s cubic-bezier(.2,.75,.25,1) both!important}
